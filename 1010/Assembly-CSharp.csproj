@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{67A15B57-A5A4-8FC1-E0C4-1921B322F508}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\AudioManager.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\BackgroundMusic.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\CaptureScreenshot.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\Constants.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\DateTimeManager.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\ExtentionMethods.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\GameController.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\RateButton.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\CommonScripts\WindowTransition.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\EGTween\EGTween.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\EGTween\EGTweenExtentions.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\CommonDialog.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\DeletAllPrefs.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\GameOver.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\MainScreen.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\MusicButton.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\QuitconfirmGame.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\QuitconfirmPlay.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\ReviewDailogue.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\Settings.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\SettingsContent.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\SoundButton.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\Store.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\ThemeButton.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\GameScripts\ToggleButton.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\Block.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\BlockManager.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\BlockTrayManager.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\ClassicHelp_Gameplay.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\DestroyBlock.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\GameDataManager.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\GamePlay.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Gameplay\IntroAndHelpScreen.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\InputManager\InputManager.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Theme\GameBlockColors.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Theme\ThemeCameraHandler.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Theme\ThemeManager.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Theme\ThemeSpriteHandler.cs" />
+     <Compile Include="Assets\Block Puzzle\Scripts\Theme\ThemeTextHandler.cs" />
+     <Compile Include="Assets\Fabric\Kits\Answers\Runtime\Answers.cs" />
+     <Compile Include="Assets\Fabric\Kits\Answers\Runtime\Internal\AnswersAndroidImplementation.cs" />
+     <Compile Include="Assets\Fabric\Kits\Answers\Runtime\Internal\AnswersAppleImplementation.cs" />
+     <Compile Include="Assets\Fabric\Kits\Answers\Runtime\Internal\AnswersStubImplementation.cs" />
+     <Compile Include="Assets\Fabric\Kits\Answers\Runtime\Internal\IAnswers.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Runtime\Crashlytics.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Runtime\CrashlyticsInit.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Runtime\Internal\AndroidImpl.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Runtime\Internal\IOSImpl.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Runtime\Internal\Impl.cs" />
+     <Compile Include="Assets\Fabric\Runtime\Fabric.cs" />
+     <Compile Include="Assets\Fabric\Runtime\FabricInit.cs" />
+     <Compile Include="Assets\Fabric\Runtime\FabricUtils.cs" />
+     <Compile Include="Assets\Fabric\Runtime\Internal\AndroidImpl.cs" />
+     <Compile Include="Assets\Fabric\Runtime\Internal\IOSImpl.cs" />
+     <Compile Include="Assets\Fabric\Runtime\Internal\Impl.cs" />
+     <Compile Include="Assets\Fabric\ThirdParty\MiniJSON.cs" />
+     <None Include="Assets\Fabric\NOTICE.txt" />
+     <None Include="Assets\Block Puzzle\xml\Resources\sample.xml" />
+     <None Include="Assets\Plugins\Android\crashlytics\NOTICE.txt" />
+     <None Include="Assets\Block Puzzle\Images\New\font-Baloo_Bhaina\OFL.txt" />
+     <None Include="Assets\Plugins\Android\crashlytics-wrapper\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\fabric-init\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\crashlytics\THIRDPARTYLICENSE.txt" />
+     <None Include="Assets\Plugins\Android\answers\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\fabric\NOTICE.txt" />
+     <None Include="Assets\Plugins\Android\fabric\Template-AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\fabric\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\beta\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\crashlytics\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\fabric\THIRDPARTYLICENSE.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Analytics">
+ <HintPath>/Users/lex/apps/1010/1010/Assets/Fabric/Managed/Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="Validator">
+ <HintPath>/Users/lex/apps/1010/1010/Assets/Fabric/Managed/Validator.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
